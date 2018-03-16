@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viwewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Interactive to do list">
+    <meta name="author" content="Henry Herzfeld">
+
+    <title>To Do List</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <style>
+        body {
+            padding-top: 54px;
+        }
+        @media (min-width: 992px) {
+            body {
+                padding-top: 56px;
+            }
+        }
+
+    </style>
+
+    <!-- Home CSS -->
+    <link rel="stylesheet" type="text/css" href="p3style.css" media="screen" />
+
+</head>
+
+<body class="bg-light" id="main">
+
+<!-- Navigation (Mainly Bootstrap Template) -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-info fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#top" tabindex="-1">JQuery Implementation (Project 4)</a>
+        <button class="navbar-toggler" tabindex="-1" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../index.html">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="../p2/#AboutSnails">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../p2/#FastSnails">Snails</a>
+                </li>
+            </ul>
+            <!-- Filter Button Content -->
+            <div class="navbar navbar-light bg-faded">
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+
+<!-- Page Content -->
+<div class="container-fluid bg-light">
+
+    <!-- Header -->
+    <div class="col-lg-12 text-center">
+        <h1 class="m-3" id="top">To Do List</h1>
+    </div>
+
+    <div class="row-fluid">
+        <div class="col col-sm-6 p-sm-3 col-xl-4 p-xl-2 offset-md-4">
+
+        <!-- Base List Element -->
+        <div class="listObj mb-3 mx-1 media" id="1">
+            <!-- Icon Content -->
+            <img class="mb-1 p-1 align-self-start" id="icon1" src="assets/todo.png">
+            <!-- Media Content -->
+            <div class="media-body">
+                <!-- Exit Button -->
+                <button type="button" class="close align-self-start listCloseButton float-right mr-1 hide" tabindex="-1">
+                    <p>&times;</p>
+                </button>
+                <!-- Form Content -->
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control listText hide in" id="title" placeholder="Add item...">
+                        <textarea class="form-control-sm w-75 listText mt-1 text-secondary hide in" id="details" rows="1" placeholder ="Details..."></textarea>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+        <div class="col col-sm-6 p-sm-3 col-xl-4 p-xl-2">
+    </div>
+
+    </div>
+
+</div>
+
+<a data-toggle="tooltip" data-placement="top" title="Add Item" data-animation="true">
+    <a class="btn btn-info btn-circle hoverShadow" id="addButton"><img src="assets/create.png" class="img-responsive"></a>
+</a>
+
+
+
+<!-- Tether.js, JQuery, Bootstrap and Custom JS imports -->
+<script src="vendor/tether.min.js"></script>
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="imageinteract.js"></script>
+
+</body>
+</html>

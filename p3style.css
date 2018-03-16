@@ -1,0 +1,124 @@
+.listText
+{
+    display: block;
+    margin: 4px 0px 0px 2px;
+    border: 0px;
+    resize: none;
+    width: auto;
+}
+
+.listObj
+{
+    background:  lightcoral url(assets/pattern.png);
+    margin: auto;
+    border-radius: 5px;
+}
+
+.listObj:hover
+{
+    box-shadow: 1px 2px 5px MediumAquaMarine;
+}
+
+.form-control
+{
+    height: 30px;
+}
+
+.hoverShadow
+{
+    box-shadow: 0 1.5em 3em rgba(0,0,0,0.15);
+    border-radius: 5px;
+    position: relative;
+    transition: all 0.08s ease;
+}
+.hoverShadow::after
+{
+    position: absolute;
+    border-radius: 5px;
+    box-shadow: 0 4em 8em rgba(0,0,0,0.3);
+    opacity: 0;
+    transition: opacity 0.08s ease;
+}
+
+.hoverShadow:hover
+{
+    transform: scale(1.2, 1.2);
+}
+
+.hoverShadow:hover::after
+{
+    opacity: 1;
+}
+
+.container .alert
+{
+    border-radius: 4px;
+    opacity: 0;
+    box-shadow: 0 5px 15px
+}
+
+#title
+{
+    transition: width 0.25s ease-in-out;
+    width: 50%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#details:hover
+{
+    height: 4.5em;
+}
+
+#details:focus
+{
+    height: 4.5em;
+}
+
+.listText:focus
+{
+    outline: none;
+    background-color: #eceff1;
+    box-shadow: inset 1px 2px 4px rgba(0,0,0,0.15);
+}
+
+#title:focus
+{
+    background-color: #eceff1;
+    box-shadow: inset 1px 2px 4px rgba(0,0,0,0.15);
+    width: 75%;
+}
+
+.hide
+{
+    transition: opacity .1s;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+.hide.in
+{
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+img
+{
+    width: 5em;
+}
+
+#addButton
+{
+    position: fixed;
+    bottom: 5em;
+    right: 5em;
+    width: 5.5em;
+    height: 5.5em;
+    text-align: center;
+    padding: .15rem 0;
+    font-size: 12px;
+    line-height: 1.428571429;
+    border-radius: 40px;
+}
